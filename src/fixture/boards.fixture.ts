@@ -12,14 +12,16 @@ const board: IBoard = {
 					id: 'test_task_0',
 					description: 'Full task description here',
 					fullfilled: false,
-					name: 'Test task'
+					name: 'Test task',
+					tags: [],
 				},
 
 				{
 					id: 'test_task_2',
 					description: 'Full task description here',
 					fullfilled: false,
-					name: 'Test task 3'
+					name: 'Test task 3',
+					tags: [],
 				}
 			]
 		},
@@ -34,7 +36,8 @@ const board: IBoard = {
 					id: 'test_task_1',
 					description: 'Full task description here',
 					fullfilled: false,
-					name: 'Test task 2'
+					name: 'Test task 2',
+					tags: [],
 				}
 			]
 		}
