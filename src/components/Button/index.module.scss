@@ -1,0 +1,45 @@
+$tranisition_duration: 150ms;
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 0;
+	border-radius: 2px;
+	padding: 4px 7px;
+	line-height: 20px;
+	background: transparent;
+
+	cursor: pointer;	
+	color: #5E6C84;
+
+	transition-duration: $tranisition_duration;
+
+	span, path {
+		fill: var(--text-btn-c);
+		transition-duration: $tranisition_duration;
+	}
+
+	&:disabled {
+		cursor: default;
+	}
+
+	&:hover {
+		color: var(--text-c);
+		background-color: rgba(118, 129, 152, 0.19);
+	}
+
+	&:active {
+		background-color: #96A0B1;
+		color: white;
+
+		span {
+			color: white !important;
+		}
+		
+		path {
+			fill: white !important;
+		}
+	}
+}

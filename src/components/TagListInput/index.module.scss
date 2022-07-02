@@ -1,0 +1,34 @@
+.wrapper {
+	display: block;
+}
+
+.headline-block {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.color-headline {
+	margin-left: 62.5px;
+}
+
+.inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	margin-top: 5px;
+}
+
+.text-input {
+	max-width: 142px;
+}
+
+.create-btn {
+	margin-top: 10px;
+}
+
+.create-btn__svg {
+	width: 15px;
+	height: 15px;
+}

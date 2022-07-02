@@ -1,0 +1,22 @@
+.form {
+	max-width: 600px;
+	flex-grow: 1;
+}
+
+.top-block {
+	display: flex;
+	align-items: center;
+}
+
+.delete-btn {
+	margin-left: auto;
+}
+
+.delete-btn__svg {
+	width: 20px;
+	height: 20px;
+}
+
+.action-btn {
+	margin-top: 16px;
+}

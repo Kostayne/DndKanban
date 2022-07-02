@@ -1,0 +1,33 @@
+.wrapper {
+	display: block;
+}
+
+.name {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	margin-bottom: 5px;
+}
+
+.input {
+	display: block;
+	border: none;
+
+	border: 1px solid;
+	border-color: #457199;
+	color: var(--text-c);
+	transition-duration: 150ms;
+	padding: 4px;
+
+	border-radius: 3px;
+	outline: 1px solid transparent;
+
+	&::placeholder {
+		color: #97A0AF;
+	}
+
+	&:focus {
+		outline-color: #79B7F1;
+		border-color: #79B7F1;
+	}
+}

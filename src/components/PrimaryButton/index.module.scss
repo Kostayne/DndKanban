@@ -1,0 +1,31 @@
+$tranisition_duration: 150ms;
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 0;
+	border-radius: 3px;
+	padding: 4px 8px;
+	line-height: 20px;
+
+	background-color: #0079BF;
+
+	cursor: pointer;	
+	color: white;
+
+	transition-duration: $tranisition_duration;
+
+	&:disabled {
+		cursor: default;
+	}
+
+	&:hover {
+		background-color: #026AA7;
+	}
+
+	&:active {
+		background-color: #055A8C;
+	}
+}

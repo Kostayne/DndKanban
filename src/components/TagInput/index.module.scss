@@ -1,0 +1,23 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.color {
+	height: 28px;
+}
+
+.delete {
+	display: block;
+	padding: 4px;
+
+	height: 21px;
+	width: 21px;
+}
+
+.delete__svg {
+	width: 14px;
+	height: 14px;
+	transform: translate(-0.5px, -1px);
+}

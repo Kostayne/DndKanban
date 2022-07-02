@@ -1,0 +1,44 @@
+.page {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.delete-all-btn {
+	width: fit-content;
+}
+
+.groups-block {
+	margin-top: 15px;
+	display: flex;
+	flex-grow: 1;
+	overflow-x: auto;
+
+	column-gap: 15px;
+	align-items: flex-start;
+	justify-content: safe left;
+	flex-shrink: 0;
+
+	&::-webkit-scrollbar {
+		width: 5px;
+		height: 12px;
+		border-radius: 2px;
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 2px;
+		background-color: rgba(170, 170, 170, 0.486);
+	}
+}
+
+.groups {
+	display: block;
+}
+
+.create-group {
+	min-width: 215px;
+	width: 215px;
+	max-width: 215px;
+	height: 32px;
+}

@@ -1,0 +1,67 @@
+.group {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--card-bg);
+	padding: 10px 12px;
+	border-radius: 3px;
+
+	min-height: 250px;
+	min-width: 270px;
+	max-width: 270px;
+	
+	filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.25));
+}
+
+._dragging {
+	opacity: 0.1;
+}
+
+.name, .description {
+	word-break: break-word;
+}
+
+.name {
+	display: block;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.description {
+	margin-top: 4px;
+	display: block;
+}
+
+.tasks {
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+
+.create-new {
+	margin-top: auto;
+	justify-content: left;	
+}
+
+.create-new__text {
+	margin-left: 4px;
+}
+
+.create-new__content {
+	display: flex;
+	align-items: center;
+}
+
+.create-new__svg {
+	width: 15px;
+	height: 15px;
+}
+
+.top-block {
+	display: flex;
+	align-items: center;
+}
+
+.dots {
+	margin-left: auto;
+	padding: 10px;
+}
+

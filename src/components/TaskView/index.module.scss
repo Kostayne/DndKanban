@@ -1,0 +1,63 @@
+.task {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+
+	background: white;
+	padding: 3px 10px;
+	border-radius: 3px;
+
+	filter: drop-shadow(0px 1px 0px rgba(180, 180, 180, 0.25));
+	cursor: pointer;
+
+	transition-duration: 50ms;
+
+	&:hover {
+		.edit {
+			opacity: 1;
+		}
+	}
+}
+
+._drag {
+	// display: none;
+	opacity: 0.2;
+}
+
+.name, .description {
+	word-break: break-word;
+}
+
+.name {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.description {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	display: block;
+}
+
+.top-block {
+	display: flex;
+	align-items: center;
+}
+
+.edit {
+	opacity: 0;
+	margin-left: auto;
+
+	padding: 4px;
+}
+
+.edit__svg {
+	width: 16px;
+	height: 16px;
+}
+
+.tags {
+	margin-top: 2px;
+}

@@ -1,0 +1,42 @@
+.wrapper {
+	display: block;
+}
+
+.name {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.input {
+	display: block;
+	margin-top: 5px;
+	border: none;
+
+	border: 1px solid;
+	border-color: #457199;
+	color: var(--text-c);
+	transition-duration: 150ms;
+	padding: 4px;
+
+	border-radius: 3px;
+	outline: 1px solid transparent;
+
+	transition-property: width;
+	transition-duration: 0ms;
+
+	transition-property: height;
+	transition-duration: 0ms;
+
+	max-width: 100%;
+
+	&::placeholder {
+		color: #97A0AF;
+	}
+
+	&:focus {
+		outline-color: #79B7F1;
+		border-color: #79B7F1;
+	}
+}
+
