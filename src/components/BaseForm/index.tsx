@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import { PrimaryBtn } from "../PrimaryButton";
 import css from './index.module.scss';
+import { ReactNode, useEffect } from "react";
+import { PrimaryBtn } from "../PrimaryButton";
 import { TextButton } from "../Button";
 import { DeleteIconSvg } from "../icons/Delete";
 
@@ -19,6 +19,10 @@ export const BaseForm = ({
 	onAction,
 	onDelete,
 }: BaseFormProps) => {
+	useEffect(() => {
+		
+	}, []);
+
 	return (
 		<div className={`${css['form']} card modal-form`}>
 			<div className={`${css['top-block']}`}>

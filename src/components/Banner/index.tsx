@@ -1,9 +1,9 @@
-import React, { ReactNode } from "react";
+import React, { ReactElement, ReactNode } from "react";
 import css from './index.module.scss';
 
 interface BannerProps {
 	className?: string;
-	children: ReactNode;
+	children: ReactElement | ReactElement[];
 	onClickOutside?: () => void;
 }
 
@@ -19,7 +19,7 @@ export const Banner = ({
 	};
 
 	return (
-		<div className={`${css['banner']} ${className}`}
+		<div className={`${css['banner']} ${className} fadein`}
 		onMouseDown={handleOnClick}>
 			{children}
 		</div>

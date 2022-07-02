@@ -1,6 +1,21 @@
 .form {
 	max-width: 600px;
 	flex-grow: 1;
+	opacity: 0;
+
+	animation-name: fadein;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 .top-block {
