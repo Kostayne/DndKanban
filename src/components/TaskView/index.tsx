@@ -12,7 +12,7 @@ interface TaskViewProps {
 	styles?: any;
 	preview?: boolean;
 	onEdit?: () => void;
-	onClick?: () => void;
+	onClick?: (e: React.MouseEvent) => void;
 	onDragStart?: () => void;
 }
 

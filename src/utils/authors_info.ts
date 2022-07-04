@@ -1,4 +1,4 @@
-const kostayneBaner = `
+const kostayneBanner = `
  /$$   /$$                       /$$                                            
 | $$  /$$/                      | $$                                            
 | $$ /$$/   /$$$$$$   /$$$$$$$ /$$$$$$    /$$$$$$  /$$   /$$ /$$$$$$$   /$$$$$$ 
@@ -12,7 +12,7 @@ const kostayneBaner = `
                                                    \\______/                   `;
 
 export const printAuthorsInfo = () => {
-	console.log(kostayneBaner);
+	console.log(kostayneBanner);
 	console.log('kostayne-dev@yandex.ru');
     console.log('https://github.com/Kostayne');
 	console.log('1.048596');

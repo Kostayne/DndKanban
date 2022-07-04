@@ -19,10 +19,6 @@ export const BaseForm = ({
 	onAction,
 	onDelete,
 }: BaseFormProps) => {
-	useEffect(() => {
-		
-	}, []);
-
 	return (
 		<div className={`${css['form']} card modal-form`}>
 			<div className={`${css['top-block']}`}>

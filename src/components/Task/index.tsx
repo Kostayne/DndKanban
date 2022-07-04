@@ -122,10 +122,26 @@ const Component = ({
 		uiStore.setDraggingTask(task);
 	};
 
+	const onClick = (e: React.MouseEvent) => {
+		const isHtmlElem = e.target instanceof HTMLElement;
+
+		if (!isHtmlElem) {
+			return;
+		}
+
+		const tg = e.target as HTMLElement;
+		if (tg.tagName == 'button') {
+			return;
+		}
+
+		uiStore.setFormTask(task);
+		uiStore.setActiveForm(FormNames.fullTask);
+	}
+
 	dragRef(dropRef(ref))
 
 	return (
-		<TaskView onClick={() => {}} onEdit={onEdit} task={task}
+		<TaskView onClick={onClick} onEdit={onEdit} task={task}
 		onDragStart={onDragStart} ref={ref} isDragging={isDragging} />
 	);
 };
